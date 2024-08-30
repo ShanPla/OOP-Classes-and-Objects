@@ -88,7 +88,7 @@ void displayBook(){
 	cout<<"Book List: ";
 	cout<<"\nTitle		Author		Year"<<endl;
 	
-	for(int i = 0; i<size+1; i++){
+	for(int i = 0; i<size; i++){
 		cout<<Book[i].getTitle()<<"		"<<Book[i].getAuthor()<<"		"<<Book[i].getYear()<<"\n"<<endl;
 
 	}
@@ -114,7 +114,7 @@ void searchBook(){
 			cout<<"Please input title: ";
 			getline(cin, search);
 			
-		for(int i = 0; i<size+1; i++){
+		for(int i = 0; i<size; i++){
 
 			if(search.compare(Book[i].getTitle()) == 0){
 
@@ -147,7 +147,7 @@ void searchBook(){
 			cout<<"Please input author name: ";
 			getline(cin, search);
 			
-		for(int i = 0; i<size+1; i++){
+		for(int i = 0; i<size; i++){
 
 			if(search.compare(Book[i].getAuthor()) == 0){
 				
@@ -181,7 +181,7 @@ void searchBook(){
 			cin>>choice;
 			cin.ignore();	
 			
-		for(int i = 0; i<size+1; i++){	
+		for(int i = 0; i<size; i++){	
 
 			if(choice == Book[i].getYear()){
 				
