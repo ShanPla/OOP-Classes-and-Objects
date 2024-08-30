@@ -67,6 +67,8 @@ void addBook(){
 	cin>>Year;
 	Book[size].setYear(Year);
 
+	size = size+1;
+
 	cout<<"\nBook added successfully!";	
 	cout<<"\nDo you want to add another book? (Y/N): \n"<<endl;
 	cin>>ans;
@@ -75,7 +77,6 @@ void addBook(){
 	if(ans == 'N' || ans == 'n'){
 		break;
 	}
-	size = size+1;
 }
 }
 
